@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffffff"
+    tools:context=".SymptomsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/colorlight"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/txtDate"
+                android:layout_width="132dp"
+                android:layout_height="37dp"
+                android:background="@drawable/edittext_states"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:hint="YYYY-MM-DD"
+                android:paddingLeft="10dp"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btndatepicker"
+                android:layout_width="65dp"
+                android:layout_height="48dp"
+                android:fontFamily="@font/roboto"
+                android:text="Date"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="View"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnNewDataAdd"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Add Data"
+                android:textSize="14dp">
+
+            </Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@color/colorlight"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:text="Statistic On This Date"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@color/colorlight"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:text="Statistics Total"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/chartovelall"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

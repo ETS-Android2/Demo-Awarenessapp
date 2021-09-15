@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pg.abir.awarenesscampaignapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/desent"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/desent"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy"/>
+
+
+        <activity android:name="pg.abir.awarenesscampaignapp.MainActivity2"></activity>
+        <activity android:name="pg.abir.awarenesscampaignapp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="pg.abir.awarenesscampaignapp.HomeActivity" />
+        <activity android:name="pg.abir.awarenesscampaignapp.OverviewActivity" />
+        <activity android:name="pg.abir.awarenesscampaignapp.SymptomsActivity" />
+        <activity android:name="pg.abir.awarenesscampaignapp.PreventionActivity" />
+        <activity android:name="pg.abir.awarenesscampaignapp.TreatmentActivity" />
+        <activity android:name="pg.abir.awarenesscampaignapp.DesentActivity" />
+        <activity android:name="pg.abir.awarenesscampaignapp.QuestionAnswerActivity" />
+        <activity android:name="pg.abir.awarenesscampaignapp.StatisticActivity" />
+        <activity android:name="pg.abir.awarenesscampaignapp.NewDataAddStatisticActivity" />
+        <activity android:name="pg.abir.awarenesscampaignapp.StatisticForAdmin" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

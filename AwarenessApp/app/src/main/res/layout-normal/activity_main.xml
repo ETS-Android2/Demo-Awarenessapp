@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7F6FE"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/bungee_shade"
+        android:gravity="center_horizontal"
+        android:text="Stay Home"
+        android:textColor="#121212"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="30dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/InputTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/txtMobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/user"
+                    android:drawableTint="#FF4081"
+                    android:fontFamily="@font/roboto"
+                    android:hint="User"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/InputTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawableTint="#FF4081"
+                    android:fontFamily="@font/roboto"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:keepScreenOn="false"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btnAdministrator"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto"
+                        android:text="Administrator"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/btnGuest"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:fontFamily="@font/roboto"
+                        android:text="Guest"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="#d67601"
+                android:fontFamily="@font/acme"
+                android:text="SIGN IN"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:foreground="?attr/selectableItemBackground"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/coronavirus" />
+</RelativeLayout>
