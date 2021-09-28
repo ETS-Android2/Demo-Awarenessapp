@@ -12,7 +12,7 @@ Project No: 18<br>
 Year: 2020
 
 ## Demo Video
-<!-- [![IMAGE ALT TEXT](http://img.youtube.com/vi/1bBcfG0_Xd4/0.jpg)](http://www.youtube.com/watch?v=1bBcfG0_Xd4 "Demo-Awarenessapp || android dev") -->
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/ikNpvgi_MO0/0.jpg)](http://www.youtube.com/watch?v=ikNpvgi_MO0 "Demo-Awarenessapp || android dev")
 
 ## Screen shot
 
