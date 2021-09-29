@@ -7,7 +7,7 @@ This is only made for dummy purposes. Nothing related to commercial use.
 ## Project description
 Name: Demo-Awarenessapp <br>
 Programming Language: Java <br>
-Platfrom: Android application<br>
+Platform: Android application<br>
 Project No: 18<br>
 Year: 2020
 
